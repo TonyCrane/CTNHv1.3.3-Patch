@@ -1,0 +1,10 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "io.github.tonycrane.tcpatch.mixin",
+  "refmap": "mixins.tcpatch.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinHugeBusPartMachine_IHasCircuitSlot"
+  ]
+}

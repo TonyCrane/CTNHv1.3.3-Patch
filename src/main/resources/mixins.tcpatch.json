@@ -5,6 +5,7 @@
   "refmap": "mixins.tcpatch.refmap.json",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MixinHugeBusPartMachine_IHasCircuitSlot"
+    "MixinHugeBusPartMachine_IHasCircuitSlot",
+    "MixinAEUniversalCellInventory_OverflowVoidOnInsert"
   ]
 }

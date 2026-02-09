@@ -1,4 +1,4 @@
-name: Build tcpatch JAR
+name: Build tcpatch mod JAR
 
 on:
   push:
@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -38,10 +40,15 @@ jobs:
           mkdir -p "$out_dir"
 
           # Find the produced jar (reobfJar finalizes jar in this project)
-          jar_path="build/libs/tcpatch-1.20.1-0.1.0.jar"
-          if [[ ! -f "$jar_path" ]]; then
-            echo "Expected jar not found at $jar_path"
-            echo "Available files in build/libs:"
+          jar_path=""
+          for candidate in build/libs/tcpatch-1.20.1-*.jar; do
+            if [[ -f "$candidate" ]] && [[ "$candidate" != *"-sources.jar" ]] && [[ "$candidate" != *"-javadoc.jar" ]]; then
+              jar_path="$candidate"
+              break
+            fi
+          done
+          if [[ -z "$jar_path" ]]; then
+            echo "No tcpatch jar found in build/libs"
             ls -la build/libs || true
             exit 1
           fi

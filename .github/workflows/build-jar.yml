@@ -1,0 +1,59 @@
+name: Build tcpatch JAR
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Ensure Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Build jar
+        run: ./gradlew jar --no-daemon --console=plain
+
+      - name: Prepare artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          short_sha="${GITHUB_SHA::7}"
+          out_dir="build/artifacts"
+          mkdir -p "$out_dir"
+
+          # Find the produced jar (reobfJar finalizes jar in this project)
+          jar_path="build/libs/tcpatch-1.20.1-0.1.0.jar"
+          if [[ ! -f "$jar_path" ]]; then
+            echo "Expected jar not found at $jar_path"
+            echo "Available files in build/libs:"
+            ls -la build/libs || true
+            exit 1
+          fi
+
+          out_name="tcpatch-1.20.1-${short_sha}.jar"
+          cp -f "$jar_path" "$out_dir/$out_name"
+          echo "ARTIFACT_JAR=$out_dir/$out_name" >> "$GITHUB_ENV"
+          echo "ARTIFACT_NAME=$out_name" >> "$GITHUB_ENV"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ${{ env.ARTIFACT_JAR }}
+          if-no-files-found: error

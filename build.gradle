@@ -51,6 +51,11 @@ repositories {
         url = 'https://maven.gtceu.com'
         content { includeGroup 'com.gregtechceu.gtceu' }
     }
+    maven {
+        name = 'tterrag maven (Registrate)'
+        url = 'https://maven.tterrag.com/'
+        content { includeGroup 'com.tterrag.registrate' }
+    }
     flatDir {
         dirs 'libs'
     }
@@ -69,6 +74,9 @@ dependencies {
     } else {
         compileOnly fg.deobf("com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gtceu_version}") { transitive = false }
     }
+
+    // Registrate types are referenced by GTCEu's GTBlocks/GCYMBlocks (BlockEntry/RegistryEntry).
+    compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 }
 
 tasks.named('processResources', ProcessResources).configure {

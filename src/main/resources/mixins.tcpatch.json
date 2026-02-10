@@ -8,6 +8,9 @@
     "MixinHugeBusPartMachine_IHasCircuitSlot",
     "MixinAEUniversalCellInventory_OverflowVoidOnInsert",
     "MixinDigitalMinerLogic_RawOreFilter",
-    "MixinMultiblocksB_CombinedVDF_PatternFix"
+    "MixinMultiblocksB_CombinedVDF_PatternFix",
+    "MixinBrainInAVatMachine_OverclockAndDoubt",
+    "MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
+    "MixinWorkableTieredMachine_CtnhBioNetworkOverclock"
   ]
 }

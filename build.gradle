@@ -75,6 +75,12 @@ dependencies {
         compileOnly fg.deobf("com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gtceu_version}") { transitive = false }
     }
 
+    // LDLib is a runtime dependency of GTCEu; keep it as local compileOnly to avoid remote Maven TLS issues.
+    def localLdlibJars = fileTree(dir: 'libs', include: ['ldlib*.jar'])
+    if (!localLdlibJars.isEmpty()) {
+        compileOnly fg.deobf(localLdlibJars)
+    }
+
     // Registrate types are referenced by GTCEu's GTBlocks/GCYMBlocks (BlockEntry/RegistryEntry).
     compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 }

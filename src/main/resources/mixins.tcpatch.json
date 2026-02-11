@@ -9,6 +9,7 @@
     "MixinAEUniversalCellInventory_OverflowVoidOnInsert",
     "MixinDigitalMinerLogic_RawOreFilter",
     "MixinMultiblocksB_CombinedVDF_PatternFix",
+    "MixinMultiblocksB_SpacePhotovoltaicBaseStation_SubstationOutputEnergy",
     "MixinBrainInAVatMachine_OverclockAndDoubt",
     "MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
     "MixinWorkableTieredMachine_CtnhBioNetworkOverclock"

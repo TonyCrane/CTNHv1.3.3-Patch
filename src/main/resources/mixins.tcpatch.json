@@ -8,6 +8,7 @@
     "MixinHugeBusPartMachine_IHasCircuitSlot",
     "MixinAEUniversalCellInventory_OverflowVoidOnInsert",
     "MixinDigitalMinerLogic_RawOreFilter",
+    "MixinMultithreadRecipeLogicProvider_VoltageFix",
     "MixinMultiblocksB_CombinedVDF_PatternFix",
     "MixinMultiblocksB_SpacePhotovoltaicBaseStation_SubstationOutputEnergy",
     "MixinCTNHRecipeModifiers_GeneratorRecipeModifierFix",

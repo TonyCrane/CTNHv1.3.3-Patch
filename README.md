@@ -16,3 +16,5 @@
 - 延长 CTNH-Bio 缸中之脑机器自我怀疑随机判定周期至每秒一次，而非每个游戏刻一次
 - 允许 CTNH-Core 太空光伏基站使用变电动力仓
 - 修复 CTNH-Core 小硅岩发电机和火箭燃料发电机的发电逻辑，类似原版内燃发电机
+- 修复 CTNH-Core Jade 机器配方电压显示问题（根据最大仓室选择显示的电压）
+    - Backport of [GregTech-Modern#4002](https://github.com/GregTechCEu/GregTech-Modern/pull/4002)（在此基础上支持更通用的能源仓类型）

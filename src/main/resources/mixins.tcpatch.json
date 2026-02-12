@@ -9,6 +9,7 @@
     "MixinAEUniversalCellInventory_OverflowVoidOnInsert",
     "MixinDigitalMinerLogic_RawOreFilter",
     "MixinMultithreadRecipeLogicProvider_VoltageFix",
+    "MixinMultiblocksA_DemonWillGenerator_PatternFix",
     "MixinMultiblocksB_CombinedVDF_PatternFix",
     "MixinMultiblocksB_SpacePhotovoltaicBaseStation_SubstationOutputEnergy",
     "MixinCTNHRecipeModifiers_GeneratorRecipeModifierFix",

@@ -18,3 +18,4 @@
 - 修复 CTNH-Core 小硅岩发电机和火箭燃料发电机的发电逻辑，类似原版内燃发电机
 - 修复 CTNH-Core Jade 机器配方电压显示问题（根据最大仓室选择显示的电压）
     - Backport of [GregTech-Modern#4002](https://github.com/GregTechCEu/GregTech-Modern/pull/4002)（在此基础上支持更通用的能源仓类型）
+- 允许 CTNH-Core 恶魔意志发电机使用激光仓，不再检查普通动力仓数量

@@ -15,6 +15,10 @@
     "MixinCTNHRecipeModifiers_GeneratorRecipeModifierFix",
     "MixinBrainInAVatMachine_OverclockAndDoubt",
     "MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
+    "MixinMultiblocksA_SlaughterHouse_BatchMode",
+    "MixinSlaughterHouseMachine_CacheAndPerf",
+    "MixinWorkableMultiblockMachine_TraitSubscriptionsAccessor",
+    "MixinWorkableMultiblockMachine_SlaughterHouseCleanup",
     "MixinWorkableTieredMachine_CtnhBioNetworkOverclock"
   ]
 }

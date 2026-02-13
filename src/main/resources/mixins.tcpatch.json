@@ -7,6 +7,7 @@
   "mixins": [
     "MixinHugeBusPartMachine_IHasCircuitSlot",
     "MixinAEUniversalCellInventory_OverflowVoidOnInsert",
+    "MixinAdvancedMEPatternBufferPartMachine_PushPatternPccardCircuitGuard",
     "MixinDigitalMinerLogic_RawOreFilter",
     "MixinMultithreadRecipeLogicProvider_VoltageFix",
     "MixinMultiblocksA_DemonWillGenerator_PatternFix",
@@ -19,6 +20,7 @@
     "MixinSlaughterHouseMachine_CacheAndPerf",
     "MixinWorkableMultiblockMachine_TraitSubscriptionsAccessor",
     "MixinWorkableMultiblockMachine_SlaughterHouseCleanup",
-    "MixinWorkableTieredMachine_CtnhBioNetworkOverclock"
+    "MixinWorkableTieredMachine_CtnhBioNetworkOverclock",
+    "MixinPatternProviderLogicImpl_DefaultCircuit"
   ]
 }

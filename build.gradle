@@ -56,6 +56,11 @@ repositories {
         url = 'https://maven.tterrag.com/'
         content { includeGroup 'com.tterrag.registrate' }
     }
+    maven {
+        name = 'CurseMaven'
+        url = 'https://www.cursemaven.com'
+        content { includeGroup 'curse.maven' }
+    }
     flatDir {
         dirs 'libs'
     }
@@ -83,6 +88,15 @@ dependencies {
 
     // Registrate types are referenced by GTCEu's GTBlocks/GCYMBlocks (BlockEntry/RegistryEntry).
     compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    // Programmed Circuit Card (compile-time only; runtime is provided by the modpack).
+    compileOnly fg.deobf("curse.maven:programmed-circuit-card-1150540:7152160")
+
+    // CTNH-Energy local jar for mixins targeting its classes (compile-time only).
+    def localCtnhEnergyJars = fileTree(dir: 'libs', include: ['*CTNH-Energy*.jar', '*ctnhenergy*.jar'])
+    if (!localCtnhEnergyJars.isEmpty()) {
+        compileOnly localCtnhEnergyJars
+    }
 }
 
 tasks.named('processResources', ProcessResources).configure {

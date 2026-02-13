@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.ctnhenergy;
 
 import com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler;
 import com.gregtechceu.gtceu.common.item.IntCircuitBehaviour;

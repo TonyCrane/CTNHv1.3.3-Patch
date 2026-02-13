@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.ctnhbio;
 
 import com.gregtechceu.gtceu.api.GTValues;
 import com.gregtechceu.gtceu.api.capability.IOpticalComputationProvider;

@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.gtmthings;
 
 import com.gregtechceu.gtceu.api.cover.filter.ItemFilter;
 import com.gregtechceu.gtceu.api.machine.feature.IRecipeLogicMachine;

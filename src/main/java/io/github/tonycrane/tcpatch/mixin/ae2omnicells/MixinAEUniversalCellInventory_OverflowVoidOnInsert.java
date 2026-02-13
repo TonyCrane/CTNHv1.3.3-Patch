@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.ae2omnicells;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;

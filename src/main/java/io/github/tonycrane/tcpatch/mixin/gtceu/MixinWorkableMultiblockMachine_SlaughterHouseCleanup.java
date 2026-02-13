@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.gtceu;
 
 import io.github.tonycrane.tcpatch.compat.ctnhcore.SlaughterHouseMachineHooks;
 

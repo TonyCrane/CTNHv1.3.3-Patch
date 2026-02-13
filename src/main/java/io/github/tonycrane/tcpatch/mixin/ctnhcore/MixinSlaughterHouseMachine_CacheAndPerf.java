@@ -1,7 +1,8 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.ctnhcore;
 
 import io.github.tonycrane.tcpatch.compat.ctnhcore.SlaughterHouseMachineHooks;
 import io.github.tonycrane.tcpatch.compat.ctnhcore.SlaughterHouseItemKey;
+import io.github.tonycrane.tcpatch.mixin.gtceu.MixinWorkableMultiblockMachine_TraitSubscriptionsAccessor;
 
 import com.gregtechceu.gtceu.api.capability.recipe.FluidRecipeCapability;
 import com.gregtechceu.gtceu.api.capability.recipe.IO;

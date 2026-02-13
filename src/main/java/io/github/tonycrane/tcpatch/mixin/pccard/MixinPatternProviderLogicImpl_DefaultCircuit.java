@@ -1,4 +1,4 @@
-package io.github.tonycrane.tcpatch.mixin;
+package io.github.tonycrane.tcpatch.mixin.pccard;
 
 import com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler;
 import org.spongepowered.asm.mixin.Mixin;

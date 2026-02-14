@@ -22,3 +22,10 @@
 - 优化 CTNH-Core 屠宰场机器运行逻辑，降低卡顿，优化输出显示，修复电压等级不影响物品输出的问题 ([CTNH-Core#65](https://github.com/CTNH-Team/CTNH-Core/pull/65))
 - 修复了 ProgrammedCircuitCard 中无编程电路的样板默认电路为 0 的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
 - 修复了 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
+
+## Kubejs Patches
+
+一些 kubejs 脚本中的问题需要手动修改 kubejs 文件，根据 `kubejs/` 中的代码和开头的注释说明进行修改：
+
+- [`lasersorder_fix.js`](kubejs/lasersorder_fix.js)：修复激光分配仪装配线配方中缺失输入的问题
+- [`neutronium_fix.js`](kubejs/neutronium_fix.js)：将中子素的原版锭和块替换为 Avaritia 的版本，以修复中子素相关的配方问题

@@ -22,6 +22,7 @@
 - 优化 CTNH-Core 屠宰场机器运行逻辑，降低卡顿，优化输出显示，修复电压等级不影响物品输出的问题 ([CTNH-Core#65](https://github.com/CTNH-Team/CTNH-Core/pull/65))
 - 修复了 ProgrammedCircuitCard 中无编程电路的样板默认电路为 0 的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
 - 修复了 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
+- 修复了 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
 
 ## Kubejs Patches
 

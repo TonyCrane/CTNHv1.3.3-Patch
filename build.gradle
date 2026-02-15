@@ -89,14 +89,24 @@ dependencies {
     // Registrate types are referenced by GTCEu's GTBlocks/GCYMBlocks (BlockEntry/RegistryEntry).
     compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    // Programmed Circuit Card (compile-time only; runtime is provided by the modpack).
+    // Programmed Circuit Card
     compileOnly fg.deobf("curse.maven:programmed-circuit-card-1150540:7152160")
 
-    // CTNH-Energy local jar for mixins targeting its classes (compile-time only).
     def localCtnhEnergyJars = fileTree(dir: 'libs', include: ['*CTNH-Energy*.jar', '*ctnhenergy*.jar'])
     if (!localCtnhEnergyJars.isEmpty()) {
         compileOnly localCtnhEnergyJars
     }
+    def localCtnhCoreJars = fileTree(dir: 'libs', include: ['*CTNH Core*.jar', '*CTNH-Core*.jar', '*ctnhcore*.jar'])
+    if (!localCtnhCoreJars.isEmpty()) {
+        compileOnly localCtnhCoreJars
+    }
+    def localCtnhLibJars = fileTree(dir: 'libs', include: ['*CTNH Lib*.jar', '*CTNH-Lib*.jar', '*ctnhlib*.jar'])
+    if (!localCtnhLibJars.isEmpty()) {
+        compileOnly localCtnhLibJars
+    }
+
+    // Jade
+    compileOnly fg.deobf("curse.maven:jade-324717:6855440")
 }
 
 tasks.named('processResources', ProcessResources).configure {

@@ -20,9 +20,10 @@
     - Credit. [GregTech-Modern#4002](https://github.com/GregTechCEu/GregTech-Modern/pull/4002)（在此基础上支持更通用的能源仓类型）
 - 允许 CTNH-Core 恶魔意志发电机使用激光仓，不再检查普通动力仓数量 ([CTNH-Mana#`6184e09`](https://github.com/CTNH-Team/CTNH-Mana/commit/6184e0981902b93024ac87c5176eae88035a8801)/[`b7386aa`](https://github.com/CTNH-Team/CTNH-Mana/commit/b7386aacf87ff7181f1782386ab1edc8f6f63657))
 - 优化 CTNH-Core 屠宰场机器运行逻辑，降低卡顿，优化输出显示，修复电压等级不影响物品输出的问题 ([CTNH-Core#65](https://github.com/CTNH-Team/CTNH-Core/pull/65))
-- 修复了 ProgrammedCircuitCard 中无编程电路的样板默认电路为 0 的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
-- 修复了 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
-- 修复了 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
+- 修复 ProgrammedCircuitCard 中无编程电路的样板默认电路为 0 的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
+- 修复 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
+- 修复 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
+- 针对 CTNH-Core 异步机器增加了 Jade 配方进度和输出的显示（需要客户端也安装本 mod 才能显示，仅服务端安装不会报错但也不会显示）
 
 ## Kubejs Patches
 

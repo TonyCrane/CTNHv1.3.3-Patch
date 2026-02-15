@@ -30,3 +30,5 @@
 
 - [`lasersorder_fix.js`](kubejs/lasersorder_fix.js)：修复激光分配仪装配线配方中缺失输入的问题
 - [`neutronium_fix.js`](kubejs/neutronium_fix.js)：将中子素的原版锭和块替换为 Avaritia 的版本，以修复中子素相关的配方问题
+- [`additional_recipes.js`](kubejs/additional_recipes.js)：添加额外配方
+    - 坠星操纵者消耗 T3 重型合金板产出三种外星矿物

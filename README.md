@@ -24,6 +24,7 @@
 - 修复 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
 - 修复 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
 - 针对 CTNH-Core 异步机器增加了 Jade 配方进度和输出的显示（需要客户端也安装本 mod 才能显示，仅服务端安装不会报错但也不会显示）
+- 修复 CTNH-Core 异步机器在空闲时 mspt 占用过高的性能问题 ([CTNH-Core#`0c96a4a`](https://github.com/CTNH-Team/CTNH-Core/commit/0c96a4a393519ed819b509936c5aa9eed0052808)/[`7a6de26`](https://github.com/CTNH-Team/CTNH-Core/commit/7a6de26aee9d06312cb7696983e7019971ef67f4))
 
 ## Kubejs Patches
 

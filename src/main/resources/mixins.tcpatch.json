@@ -19,6 +19,7 @@
     "ctnhcore.MixinThreadRecipeLogic_FindAndHandleRecipe_SubscribeFix",
     "ctnhenergy.MixinAdvancedMEPatternBufferPartMachine_PushPatternPccardCircuitGuard",
     "gtceu.MixinEnergyHatchPartMachine_EnergyContainerAccessor",
+    "gtceu.MixinBlastPropertyBuilder_DurationOverrideRemap",
     "gtceu.MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
     "gtceu.MixinRecipeLogic_Accessor",
     "gtceu.MixinWorkableMultiblockMachine_SlaughterHouseCleanup",

@@ -26,6 +26,7 @@
 - 针对 CTNH-Core 异步机器增加了 Jade 配方进度和输出的显示（需要客户端也安装本 mod 才能显示，仅服务端安装不会报错但也不会显示）([CTNH-Core#67](https://github.com/CTNH-Team/CTNH-Core/pull/67))
 - 修复 CTNH-Core 异步机器在空闲时 mspt 占用过高的性能问题 ([CTNH-Core#`0c96a4a`](https://github.com/CTNH-Team/CTNH-Core/commit/0c96a4a393519ed819b509936c5aa9eed0052808)/[`7a6de26`](https://github.com/CTNH-Team/CTNH-Core/commit/7a6de26aee9d06312cb7696983e7019971ef67f4))
 - 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题
+- 修复 GregTech-Modern 中范围产物存放不下会直接吞掉输出的问题（[GregTech-Modern#4290](https://github.com/GregTechCEu/GregTech-Modern/pull/4290)）
 
 ## Kubejs Patches
 

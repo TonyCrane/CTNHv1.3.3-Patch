@@ -20,6 +20,7 @@
     "ctnhenergy.MixinAdvancedMEPatternBufferPartMachine_PushPatternPccardCircuitGuard",
     "gtceu.MixinEnergyHatchPartMachine_EnergyContainerAccessor",
     "gtceu.MixinBlastPropertyBuilder_DurationOverrideRemap",
+    "gtceu.MixinNotifiableItemStackHandler_BlockIntProviderOutputWhenFull",
     "gtceu.MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
     "gtceu.MixinRecipeLogic_Accessor",
     "gtceu.MixinWorkableMultiblockMachine_SlaughterHouseCleanup",

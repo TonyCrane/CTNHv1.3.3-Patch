@@ -36,3 +36,5 @@
 - [`neutronium_fix.js`](kubejs/neutronium_fix.js)：将中子素的原版锭和块替换为 Avaritia 的版本，以修复中子素相关的配方问题
 - [`additional_recipes.js`](kubejs/additional_recipes.js)：添加额外配方
     - 坠星操纵者消耗 T3 重型合金板产出三种外星矿物
+    - 量子盘相关配方（量子存储元件外壳、多维展开电路板/处理器、1k 量子存储组件）
+    - 类星体符文符文仪式配方

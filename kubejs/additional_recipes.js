@@ -2,7 +2,7 @@
 
 ServerEvents.recipes(event => {
     // 坠星操纵者 - 外星矿物
-    event.recipes.gtceu.meteor_capturer('desh_ore')
+    event.recipes.gtceu.meteor_capturer('tcpatch:desh_ore')
         .itemInputs('ctnhcore:heavy_plate_t3')
         .inputFluids(Fluid.of('bloodmagic:life_essence_fluid', 1024000))
         .itemOutputs(
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .duration(400)
 
     // 量子盘相关配方，修改自 1.4.0 版本配方
-    event.recipes.gtceu.assembler('quantum_omni_cell_housing')
+    event.recipes.gtceu.assembler('tcpatch:quantum_omni_cell_housing')
         .itemInputs('4x ae2omnicells:charged_ender_ingot')
         .itemInputs('2x gtceu:laminated_glass')
         .itemInputs('2x gtceu:quantum_eye')
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
         .duration(100)
     
-    event.recipes.gtceu.circuit_assembler('quantum_omni_cell_component_1k')
+    event.recipes.gtceu.circuit_assembler('tcpatch:quantum_omni_cell_component_1k')
         .itemInputs('16x gtceu:carbon_fiber_mesh')
         .itemInputs('4x gtceu:dense_tungsten_steel_plate')
         .itemInputs('3x #gtceu:circuits/iv')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .duration(200)
     
-    event.recipes.gtceu.extruder('multidimensional_expansion_circuit_print_ctnh')
+    event.recipes.gtceu.extruder('tcpatch:multidimensional_expansion_circuit_print_ctnh')
         .itemInputs('ae2:singularity')
         .notConsumable('ae2omnicells:multidimensional_expansion_print_press')
         .itemOutputs('ae2omnicells:multidimensional_expansion_circuit_print')
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
         .duration(600)
     
-    event.recipes.gtceu.assembler('multidimensional_expansion_processor_ctnh')
+    event.recipes.gtceu.assembler('tcpatch:multidimensional_expansion_processor_ctnh')
         .itemInputs('ae2omnicells:multidimensional_expansion_circuit_print')
         .itemInputs('4x gtceu:solar_flare_black_diamond_plate')
         .itemInputs('16x gtceu:highly_advanced_soc')
@@ -193,4 +193,93 @@ ServerEvents.recipes(event => {
         }],
         "ticks": 200
     }).id('tcpatch:quasar_rune')
+
+    // 缺失的与符文祭坛制作符文相同的魔力反应器配方
+    function rune_mana_reactor(event, input, output, mana) {
+        event.recipes.gtceu.mana_reactor('tcpatch:' + output.split(':')[1])
+            .itemInputs(input)
+            .itemOutputs(output)
+            .inputFluids(Fluid.of('gtceu:mana', mana / 50))
+            .duration(mana / 1000)
+            .EUt(120)
+    }
+
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_air',
+        'botania:rune_summer',
+    ], 'botania:rune_lust', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_fire',
+        'botania:rune_winter',
+    ], 'botania:rune_gluttony', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_water',
+        'botania:rune_spring',
+    ], 'botania:rune_greed', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_air',
+        'botania:rune_autumn',
+    ], 'botania:rune_sloth', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_earth',
+        'botania:rune_winter',
+    ], 'botania:rune_wrath', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_water',
+        'botania:rune_winter',
+    ], 'botania:rune_envy', 16000)
+    rune_mana_reactor(event, [
+        '2x botania:mana_diamond',
+        'botania:rune_fire',
+        'botania:rune_summer',
+    ], 'botania:rune_pride', 16000)
+    
+    rune_mana_reactor(event, [
+        'botania:rune_air',
+        'botania:rune_autumn',
+        'botania:rune_pride',
+        'botania:rainbow_rod',
+        'minecraft:netherite_ingot'
+    ], 'mythicbotany:asgard_rune', 20000)
+    rune_mana_reactor(event, [
+        'botania:rune_earth',
+        'botania:rune_autumn',
+        'botania:rune_gluttony',
+        'minecraft:blackstone',
+        'minecraft:brick'
+    ], 'mythicbotany:joetunheim_rune', 20000)
+    rune_mana_reactor(event, [
+        'botania:rune_fire',
+        'botania:rune_summer',
+        'botania:rune_wrath',
+        'minecraft:magma_block',
+        'minecraft:nether_brick'
+    ], 'mythicbotany:muspelheim_rune', 20000)
+    rune_mana_reactor(event, [
+        'botania:rune_water',
+        'botania:rune_winter',
+        'botania:rune_wrath',
+        'minecraft:blue_ice',
+        'minecraft:iron_ingot'
+    ], 'mythicbotany:niflheim_rune', 20000)
+    rune_mana_reactor(event, [
+        'botania:rune_earth',
+        'botania:rune_winter',
+        'botania:rune_sloth',
+        'minecraft:iron_block',
+        'minecraft:copper_ingot'
+    ], 'mythicbotany:nidavellir_rune', 20000)
+    rune_mana_reactor(event, [
+        'botania:rune_fire',
+        'botania:rune_autumn',
+        'botania:rune_envy',
+        '#forge:heads',
+        'minecraft:gold_ingot'
+    ], 'mythicbotany:helheim_rune', 20000)
 })

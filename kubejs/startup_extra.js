@@ -15,11 +15,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
             3058, 'mid', GTValues.VA[GTValues.EV], 1500, GTValues.VA[GTValues.HV], -1
         )
     );
-    // 修复铋铅合金 140 合金冶炼配方，使输出从液态变为熔融
-    GTMaterials.get('cerrobase_140').removeProperty(PropertyKey.BLAST);
-    GTMaterials.get('cerrobase_140').setProperty(
-        PropertyKey.BLAST, new $BlastProperty(1800)
-    )
 });
 
 let addFluid = (mat, key) => {

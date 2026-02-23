@@ -19,7 +19,7 @@
 - 修复 CTNH-Core Jade 机器配方电压显示问题（根据最大仓室选择显示的电压）([CTNH-Core#`042fc4c`](https://github.com/CTNH-Team/CTNH-Core/commit/042fc4c4d485a978b9686fc9b24f726b664af8e4))
     - Credit. [GregTech-Modern#4002](https://github.com/GregTechCEu/GregTech-Modern/pull/4002)（在此基础上支持更通用的能源仓类型）
 - 允许 CTNH-Core 恶魔意志发电机使用激光仓，不再检查普通动力仓数量 ([CTNH-Mana#`6184e09`](https://github.com/CTNH-Team/CTNH-Mana/commit/6184e0981902b93024ac87c5176eae88035a8801)/[`b7386aa`](https://github.com/CTNH-Team/CTNH-Mana/commit/b7386aacf87ff7181f1782386ab1edc8f6f63657))
-- 优化 CTNH-Core 屠宰场机器运行逻辑，降低卡顿，优化输出显示，修复电压等级不影响物品输出的问题 ([CTNH-Core#65](https://github.com/CTNH-Team/CTNH-Core/pull/65))
+- 优化 CTNH-Core 屠宰场机器运行逻辑，降低卡顿，优化输出显示，修复电压等级不影响物品输出的问题（客户端安装才能显示批处理按钮） ([CTNH-Core#65](https://github.com/CTNH-Team/CTNH-Core/pull/65))
 - 修复 ProgrammedCircuitCard 中无编程电路的样板默认电路为 0 的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
 - 修复 CTNH-Energy 高级样板总成自身电路无效的问题 ([CTNH-Energy#`6e10617`](https://github.com/CTNH-Team/CTNH-Energy/commit/6e106176d24629743dad70ccba0f0f3cef6efb02))
 - 修复 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
@@ -27,7 +27,7 @@
 - 修复 CTNH-Core 异步机器在空闲时 mspt 占用过高的性能问题 ([CTNH-Core#`0c96a4a`](https://github.com/CTNH-Team/CTNH-Core/commit/0c96a4a393519ed819b509936c5aa9eed0052808)/[`7a6de26`](https://github.com/CTNH-Team/CTNH-Core/commit/7a6de26aee9d06312cb7696983e7019971ef67f4))
 - 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题
 - 修复 GregTech-Modern 中范围产物存放不下会直接吞掉输出的问题（[GregTech-Modern#4290](https://github.com/GregTechCEu/GregTech-Modern/pull/4290)）
-- 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式
+- 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）
 
 ## Kubejs Patches
 

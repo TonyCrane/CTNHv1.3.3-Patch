@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     addFluid(GTMaterials.get('silicon_carbide'), $FluidStorageKeys.LIQUID);
     GTMaterials.get('silicon_carbide').setProperty(
         PropertyKey.BLAST, new $BlastProperty(
-            3058, 'mid', GTValues.VA[GTValues.EV], 1500, GTValues.VA[GTValues.HV], -1
+            3000, 'mid', GTValues.VA[GTValues.EV], -1, GTValues.VA[GTValues.HV], -1
         )
     );
 });

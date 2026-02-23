@@ -13,7 +13,7 @@
 - 修复 CTNH-Bio 生物机器的超频逻辑与实际耗电 ([CTNH-Bio#`160a4cc`](https://github.com/CTNH-Team/CTNH-Bio/commit/160a4cceeff47441bc9524cbcb5f828c73cce673)/[`6573e1f`](https://github.com/CTNH-Team/CTNH-Bio/commit/6573e1f12a9169c3363de15d9b739a564705a534))
     - 生物机器实际耗电和配方耗电同步（原来为始终耗导线上电压等级的 1A 电）
     - e.g. 给 MV 机器通 HV 电跑 MV 级别的配方可以超频一级到 HV 配方级别
-- 延长 CTNH-Bio 缸中之脑机器自我怀疑随机判定周期至每秒一次，而非每个游戏刻一次
+- 延长 CTNH-Bio 缸中之脑机器自我怀疑随机判定周期至每秒一次，而非每个游戏刻一次 ([CTNH-Bio#`e0be1fe`](https://github.com/CTNH-Team/CTNH-Bio/commit/e0be1fe3d120ca3430da2189cad6580751d76472))
 - 允许 CTNH-Core 太空光伏基站使用变电动力仓
 - 修复 CTNH-Core 小硅岩发电机和火箭燃料发电机的发电逻辑，类似原版内燃发电机 ([CTNH-Core#`b0bad72`](https://github.com/CTNH-Team/CTNH-Core/commit/b0bad72084585710799d4d4175344bcdba2c17e8))
 - 修复 CTNH-Core Jade 机器配方电压显示问题（根据最大仓室选择显示的电压）([CTNH-Core#`042fc4c`](https://github.com/CTNH-Team/CTNH-Core/commit/042fc4c4d485a978b9686fc9b24f726b664af8e4))
@@ -27,8 +27,8 @@
 - 修复 CTNH-Core 异步机器在空闲时 mspt 占用过高的性能问题 ([CTNH-Core#`0c96a4a`](https://github.com/CTNH-Team/CTNH-Core/commit/0c96a4a393519ed819b509936c5aa9eed0052808)/[`7a6de26`](https://github.com/CTNH-Team/CTNH-Core/commit/7a6de26aee9d06312cb7696983e7019971ef67f4))
 - 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题 ([CTNH-Core#`b67f4f6`](https://github.com/CTNH-Team/CTNH-Core/commit/b67f4f6e9264711420a6dabba6375a9eea3e72b3)/[`d78f23a`](https://github.com/CTNH-Team/CTNH-Core/commit/d78f23ab279ad4d8f0e162cf708566be5aafad6a))
 - 修复 GregTech-Modern 中范围产物存放不下会直接吞掉输出的问题（[GregTech-Modern#4290](https://github.com/GregTechCEu/GregTech-Modern/pull/4290)）
-- 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）
-- 优化 GregTech-Modern 概率配方逻辑，高并行/批处理配方使用期望作为输出而非精确概率
+- 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）([CTNH-Core#`c03950c`](https://github.com/CTNH-Team/CTNH-Core/commit/c03950c9d53258f1b24c7c1c4c4bc53c8150717a))
+- 优化 GregTech-Modern 概率配方逻辑，高并行/批处理配方使用期望作为输出而非精确概率 ([CTNH-Team/GregTech-Modern#3](https://github.com/CTNH-Team/GregTech-Modern/pull/3))
 
 ## Kubejs Patches
 

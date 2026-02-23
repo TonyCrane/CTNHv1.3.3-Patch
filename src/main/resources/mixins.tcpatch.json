@@ -25,6 +25,7 @@
     "gtceu.MixinNotifiableItemStackHandler_BlockIntProviderOutputWhenFull",
     "gtceu.MixinNotifiableEnergyContainer_LivingMachineNetworkVoltage",
     "gtceu.MixinRecipeLogic_Accessor",
+    "gtceu.MixinRecipeRunner_ChancedOutputExpectedOnHighParallel",
     "gtceu.MixinWorkableMultiblockMachine_SlaughterHouseCleanup",
     "gtceu.MixinWorkableMultiblockMachine_TraitSubscriptionsAccessor",
     "gtceu.MixinWorkableTieredMachine_CtnhBioNetworkOverclock",

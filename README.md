@@ -28,6 +28,7 @@
 - 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题
 - 修复 GregTech-Modern 中范围产物存放不下会直接吞掉输出的问题（[GregTech-Modern#4290](https://github.com/GregTechCEu/GregTech-Modern/pull/4290)）
 - 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）
+- 优化 GregTech-Modern 概率配方逻辑，高并行/批处理配方使用期望作为输出而非精确概率
 
 ## Kubejs Patches
 

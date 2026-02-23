@@ -17,10 +17,10 @@ public class MixinBlastPropertyBuilder_DurationOverrideRemap {
             argsOnly = true)
     private int tcpatch$remapDurationOverride(int durationOverride) {
         return switch (durationOverride) {
-            case 2000 -> 900;
-            case 3000 -> 1000;
-            case 4000 -> 1200;
-            case 6000 -> 1800;
+            case 2000 -> 200;
+            case 3000 -> 300;
+            case 4000 -> 200;
+            case 6000 -> 600;
             default -> durationOverride;
         };
     }

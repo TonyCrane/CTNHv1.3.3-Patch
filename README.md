@@ -25,7 +25,7 @@
 - 修复 CTNH-Core 中子加速器性能占用过高的问题 ([CTNH-Core#`e42f2b1`](https://github.com/CTNH-Team/CTNH-Core/commit/e42f2b1d8e7e01a7c59145a110e48eb3fecdecc5))
 - 针对 CTNH-Core 异步机器增加了 Jade 配方进度和输出的显示（需要客户端也安装本 mod 才能显示，仅服务端安装不会报错但也不会显示）([CTNH-Core#67](https://github.com/CTNH-Team/CTNH-Core/pull/67))
 - 修复 CTNH-Core 异步机器在空闲时 mspt 占用过高的性能问题 ([CTNH-Core#`0c96a4a`](https://github.com/CTNH-Team/CTNH-Core/commit/0c96a4a393519ed819b509936c5aa9eed0052808)/[`7a6de26`](https://github.com/CTNH-Team/CTNH-Core/commit/7a6de26aee9d06312cb7696983e7019971ef67f4))
-- 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题
+- 修复 CTNH-Core 中注册的部分熔融金属（蓝钛、特种复合钢-M77、幽匿合金、通流琥珀金）冶炼时长不合理的问题 ([CTNH-Core#`b67f4f6`](https://github.com/CTNH-Team/CTNH-Core/commit/b67f4f6e9264711420a6dabba6375a9eea3e72b3)/[`d78f23a`](https://github.com/CTNH-Team/CTNH-Core/commit/d78f23ab279ad4d8f0e162cf708566be5aafad6a))
 - 修复 GregTech-Modern 中范围产物存放不下会直接吞掉输出的问题（[GregTech-Modern#4290](https://github.com/GregTechCEu/GregTech-Modern/pull/4290)）
 - 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）
 - 优化 GregTech-Modern 概率配方逻辑，高并行/批处理配方使用期望作为输出而非精确概率

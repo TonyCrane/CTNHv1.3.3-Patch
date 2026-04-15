@@ -30,7 +30,7 @@
 - 为 CTNH-Core 的焦化塔和天顶聚焦蒸馏塔添加批处理模式（客户端安装才能显示批处理按钮）([CTNH-Core#`c03950c`](https://github.com/CTNH-Team/CTNH-Core/commit/c03950c9d53258f1b24c7c1c4c4bc53c8150717a))
 - 优化 GregTech-Modern 概率配方逻辑，高并行/批处理配方使用期望作为输出而非精确概率 ([CTNH-Team/GregTech-Modern#3](https://github.com/CTNH-Team/GregTech-Modern/pull/3))
 
-## Kubejs Patches
+## KubeJS Patches
 
 一些 kubejs 脚本中的问题需要手动修改 kubejs 文件，根据 `kubejs/` 中的代码和开头的注释说明进行修改：
 
@@ -44,3 +44,10 @@
     - 补充缺失的与符文祭坛制作符文相同的魔力反应器配方
 - [`startup_extra.js`](kubejs/startup_extra.js)：对 GTM 材料注册的修改
     - 补充碳化硅合金冶炼配方
+
+### KubeJS Features
+
+- 蓝图样板生成器：从机械动力的蓝图材料清单转换为 AE 伪合成样板
+    - [pattern_encoder.js](kubejs/pattern_encoder/pattern_encoder.js) 放到 `server_scripts/` 下
+    - [pattern_encoder_block.js](kubejs/pattern_encoder/pattern_encoder_block.js) 放到 `startup_scripts/` 下
+    - 如果是服务器，则需要服务端客户端都加这两个文件（至少要加 `startup_scripts/` 不然会报错）
